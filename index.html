@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bootstrap Homework</title>
+  <link href="style.css" rel="stylesheet">
+  <!-- Task 1 (part 1): Link Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+</head>
+
+<body>
+  <!-- Task 2 (part 1): Create a navbar with the following links (all other links should be deleted or disabled) -->
+  <!-- Home (index.html), Cat Facts (facts.html), Learn More (https://en.wikipedia.org/wiki/Cat) -->
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Cats</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="facts.html">Cat Facts</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://en.wikipedia.org/wiki/Cat" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Learn Mor
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Task 2 (part 2): Make sure facts.html has this same navbar so you can move back and forth. You will need to import Bootstrap in both files. -->
+  <!-- Extra Credit: Style the navbar and cards to be the same background color -->
+
+
+
+
+
+  <h1>Cats</h1>
+  <!-- Task 3: Add a carousel with 3 different cat images -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://catastic.pet/wp-content/uploads/2019/12/munchkin-kitten.jpg" class="d-block w-100" alt="Midget Cat">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.godigit.com/content/dam/godigit/directportal/en/cat-/bobtail.jpeg" class="d-block w-100" alt="Ginger Cat">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.gobankingrates.com/wp-content/uploads/2017/07/5-Persian-Piyato-shutterstock_257314705.jpg" class="d-block w-100" alt="Mad Cat">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <h2>Wild Cats</h2>
+  <!-- Task 4: Add 2 Bootstrap cards with different wildcats and descriptions of them -->
+  <div class="card" style="width: 18rem;" data-bs-theme="dark">
+    <img src="https://www.mediastorehouse.com/p/172/mammals-cats-wild-puma-4197229.jpg.webp" class="card-img-top" alt="Puma">
+    <div class="card-body">
+      <h5 class="card-title">Puma</h5>
+      <p class="card-text"> Pumas color ranges from a light buff to a dark reddish brown. The back of the ears and the tip of the tail are both black. The head is small and broad with a high, arched forehead. They have a slender, elongated body with powerful limbs.</p>
+      <a href="https://www.philadelphiazoo.org/animals/puma/#:~:text=Physical%20Description%3A%20Pumas'%20color%20ranges,elongated%20body%20with%20powerful%20limbs." class="btn btn-primary">More Info !</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;" data-bs-theme="dark">
+    <img src="https://nationalzoo.si.edu/sites/default/files/animals/cheetah-002.jpg" class="card-img-top" alt="Cheetah">
+    <div class="card-body">
+      <h5 class="card-title">Cheetah</h5>
+      <p class="card-text">Cheetahs have slender, long-legged bodies with blunt, semi-retractable claws. Their heads are small with high-set eyes. A black tear mark runs from the inner corner of each eye down to the mouth.</p>
+      <a href="https://nationalzoo.si.edu/animals/cheetah#:~:text=Physical%20Description,eye%20down%20to%20the%20mouth." class="btn btn-primary">More Info !</a>
+    </div>
+  </div>
+  
+
+  <!-- Task 1 (part 2): Link Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
